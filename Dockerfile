@@ -4,5 +4,4 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY ./ ./
 RUN npm i
-EXPOSE 3000
-CMD ["node", "server","cd client";"npm start"]
+CMD ["npm", "run", "dev"]
